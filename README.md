@@ -1,6 +1,6 @@
 # Deck of Cards
 
-This is a test repo for testing nbdev.
+
 
 ## Install
 
@@ -20,7 +20,7 @@ print(f'Number of playing cards in the deck: {len(d.cards)}')
 ```
 
     Number of playing cards in the deck: 52
-
+    
 
 ```
 card = d.pop_card()
@@ -28,6 +28,6 @@ print(card)
 ```
 
     King of Spades
-
+    
 
 See [the docs](https://fastai.github.io/deck_of_cards/) for more info.
