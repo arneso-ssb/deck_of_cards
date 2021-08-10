@@ -28,16 +28,19 @@ class Card:
         self.suit = suit
         self.rank = rank
 
+# Cell
     def __str__(self):
         """Returns a human-readable string representation."""
         return '%s of %s' % (Card.rank_names[self.rank],
                              Card.suit_names[self.suit])
 
+# Cell
     def __eq__(self, other) -> bool:
         """Checks whether self and other have the same rank and suit.
         """
         return self.suit == other.suit and self.rank == other.rank
 
+# Cell
     def __lt__(self, other) -> bool:
         """Compares this card to other, first by suit, then rank.
         """
@@ -45,6 +48,8 @@ class Card:
         t2 = other.suit, other.rank
         return t1 < t2
 
+# Cell
     def __repr__(self): return self.__str__()
 
+# Cell
     def foo(): pass
